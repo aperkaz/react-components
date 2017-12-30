@@ -3,7 +3,7 @@
 
 ## Goal
 Enable the quick exploration and navigation over an ever growing collection.
-Environment agnostic for development and deployment using Docker.
+Environment agnostic using Docker.
 
 ## Features
 

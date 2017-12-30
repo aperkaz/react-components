@@ -13,7 +13,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "docker:sandbox": "docker run -it --rm -v $(pwd):/src -w /src -p 9009:9009 node:6 bash"
   },
   "devDependencies": {
     "@storybook/react": "^3.3.3",
