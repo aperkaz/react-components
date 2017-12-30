@@ -7,7 +7,11 @@ Environment agnostic using Docker.
 
 ## Features
 
-- Use [Storybook](https://storybook.js.org/) with multiple add-ons
+- [Storybook](https://storybook.js.org/) with multiple add-ons:
+    - [Knobs](https://github.com/storybooks/storybook/tree/master/addons/knobs)
+    - [Host](https://github.com/philcockfield/storybook-host)
+    - [JSX](https://github.com/storybooks/addon-jsx)
+    - [README]()
 - [zeit.co](https://zeit.co/) deployment
 - Dockerized web-app
  
