@@ -13,12 +13,6 @@
     react-inspector "^2.2.2"
     uuid "^3.1.0"
 
-"@storybook/addon-backgrounds@^3.3.3":
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-3.3.3.tgz#8bd4310424e7ea16f898c996e2a668a7299851bd"
-  dependencies:
-    prop-types "^15.6.0"
-
 "@storybook/addon-knobs@^3.3.3":
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-3.3.3.tgz#69935137fff7f8bca79586c2a23b2c0dc6fab896"
@@ -42,6 +36,16 @@
     "@storybook/components" "^3.3.3"
     global "^4.3.2"
     prop-types "^15.5.10"
+
+"@storybook/addon-notes@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-notes/-/addon-notes-3.3.3.tgz#1965f57c7fe5c2ee348a2e2b37edc03bc84fce1e"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.0"
+    util-deprecate "^1.0.2"
+  optionalDependencies:
+    "@types/react" "^16.0.20"
 
 "@storybook/addons@^3.3.3":
   version "3.3.3"
@@ -215,7 +219,7 @@
   version "0.25.12"
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.12.tgz#49f22f7611ae381473bc9b992776a1471e899a5a"
 
-"@types/react@*", "@types/react@^16.0.18":
+"@types/react@*", "@types/react@^16.0.18", "@types/react@^16.0.20":
   version "16.0.31"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.31.tgz#5285da62f3ac62b797f6d0729a1d6181f3180c3e"
 

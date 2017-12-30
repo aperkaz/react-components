@@ -11,9 +11,8 @@ Environment agnostic using Docker.
     - [Knobs](https://github.com/storybooks/storybook/tree/master/addons/knobs)
     - [Host](https://github.com/philcockfield/storybook-host)
     - [JSX](https://github.com/storybooks/addon-jsx)
-    - [README]()
+    - [Notes](https://github.com/storybooks/storybook/tree/master/addons/notes)
 - [zeit.co](https://zeit.co/) deployment
-- Dockerized web-app
  
  ## Development 
  
