@@ -11,11 +11,9 @@ import Button from './default';
 
 setAddon(JSXAddon);
 
-storiesOf('Component/Button', module)
+storiesOf('Components/Button', module)
     .addDecorator(host({
         title: 'Button',
         align: 'center middle',
-        height: '40%',
-        width: 200,
     }))
-    .addWithJSX('with text',  withNotes('A very simple component')(() => <Button text={text('Content', 'Foo')} />));
+    .addWithJSX('default',  withNotes('A very simple button component')(() => <Button text={text('Content', 'Foo')} />));

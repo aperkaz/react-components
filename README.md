@@ -12,7 +12,7 @@ Environment agnostic using Docker.
     - [Host](https://github.com/philcockfield/storybook-host)
     - [JSX](https://github.com/storybooks/addon-jsx)
     - [Notes](https://github.com/storybooks/storybook/tree/master/addons/notes)
-- [zeit.co](https://zeit.co/) deployment
+- [Github pages](https://pages.github.com/) deployment
  
  ## Development 
  
