@@ -12,7 +12,7 @@ setAddon(JSXAddon);
 
 let props = {
     src: 'http://www.happylowcost.com/wp-content/uploads/2016/12/Paris-travel-AP65117955-xlarge.jpg',
-    height: () => text('height', '200px'),
+    height: () => text('height', '600px'),
     width: () => text('width', '200px'),
 };
 
