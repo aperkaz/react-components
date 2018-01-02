@@ -8,7 +8,6 @@ import { withNotes } from '@storybook/addon-notes';
 // -- app --
 import Button from './default';
 
-
 setAddon(JSXAddon);
 
 storiesOf('Components/Button', module)
@@ -16,4 +15,8 @@ storiesOf('Components/Button', module)
         title: 'Button',
         align: 'center middle',
     }))
-    .addWithJSX('default',  withNotes('A very simple button component')(() => <Button text={text('Content', 'Foo')} />));
+    .addWithJSX('default',
+        withNotes('A very simple button component')
+        (() =>
+            <Button text={text('Content', 'Foo')} />
+        ));

@@ -10,8 +10,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
-    "build": "build-storybook -s public",
-    "deploy": "storybook-to-ghpages",
+    "build-storybook": "build-storybook -s public",
+    "deploy-storybook": "storybook-to-ghpages",
     "docker:sandbox": "docker run -it --rm -v $(pwd):/src -w /src -p 9009:9009 node:6 bash",
     "eject": "react-scripts eject"
   },
