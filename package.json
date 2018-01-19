@@ -3,10 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-knobs": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3",
+    "@storybook/addon-notes": "^3.3.3",
+    "@storybook/react": "^3.3.3",
+    "@storybook/storybook-deployer": "^2.2.0",
     "font-awesome": "^4.7.0",
+    "markdown": "^0.5.0",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-markdown": "^3.1.4",
+    "react-particles-js": "^2.1.0",
+    "react-render-html": "^0.6.0",
     "react-scripts": "1.0.17",
+    "storybook-addon-jsx": "^5.1.0",
+    "storybook-host": "^4.1.5",
+    "storybook-readme": "^3.1.1",
     "styled-components": "^2.4.0"
   },
   "scripts": {
@@ -14,7 +28,8 @@
     "build-storybook": "build-storybook -s public",
     "deploy-storybook": "storybook-to-ghpages",
     "docker:sandbox": "docker run -it --rm -v $(pwd):/src -w /src -p 9009:9009 node:6 bash",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "node_modules/eslint/bin/eslint.js src"
   },
   "storybook-deployer": {
     "gitUsername": "aperkaz",
@@ -22,15 +37,9 @@
     "commitMessage": "Deploy Storybook to GhPages"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.3.3",
-    "@storybook/addon-knobs": "^3.3.3",
-    "@storybook/addon-links": "^3.3.3",
-    "@storybook/addon-notes": "^3.3.3",
-    "@storybook/react": "^3.3.3",
-    "@storybook/storybook-deployer": "^2.2.0",
-    "prop-types": "^15.6.0",
-    "storybook-addon-jsx": "^5.1.0",
-    "storybook-host": "^4.1.5",
-    "storybook-readme": "^3.1.1"
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
   }
 }

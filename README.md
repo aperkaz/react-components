@@ -16,7 +16,7 @@ Environment agnostic using Docker.
  
  ## Development 
  
- Run web-app inside local [effimeral Docker container](https://gist.github.com/aperkaz/ca0ddf2bd933a98634ec800dc7fd2046):
+ Run inside a local [effimeral Docker container](https://gist.github.com/aperkaz/ca0ddf2bd933a98634ec800dc7fd2046):
  ```
  npm run docker:sandbox 
  ``` 

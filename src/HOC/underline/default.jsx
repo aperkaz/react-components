@@ -21,14 +21,12 @@ const Div = styled.div`
 `;
 
 const underlineAnimation = (color, height) => (Component) => {
-    const Wrapping = (props) => {
-        return (
-            <Div color={color} height={height}>
-                <Component {...props} />
-            </Div>
-        );
-    };
-    return Wrapping;
+  const Wrapping = props => (
+    <Div color={color} height={height}>
+      <Component {...props} />
+    </Div>
+  );
+  return Wrapping;
 };
 
 export default underlineAnimation;

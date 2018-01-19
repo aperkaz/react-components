@@ -1,7 +1,7 @@
 // -- dependencies --
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
 
 
 const Holder = styled.div`
@@ -30,11 +30,22 @@ const Img = styled.img`
 `;
 
 
-
-const CoverArt = ({src, height, width}) => (
+const CoverArt = ({ src, height, width }) => (
     <Holder height={height} width={width} >
         <Img src={src} />
     </Holder>
 );
+
+CoverArt.propTypes = {
+    src: PropTypes.string,
+    height: PropTypes.string,
+    width: PropTypes.string,
+};
+
+CoverArt.defaultProps = {
+    src: '',
+    height: '200px',
+    width: '200px',
+};
 
 export default CoverArt;

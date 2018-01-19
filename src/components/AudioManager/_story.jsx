@@ -15,8 +15,7 @@ storiesOf('Components/AudioManager', module)
         title: 'CoverArt',
         align: 'center middle',
     }))
-    .addWithJSX('default',
-        withNotes('Component for playback online-audio streams')
-        (() =>
-            <AudioManager src={text('audio src', 'http://ice2.somafm.com/folkfwd-128-mp3')} />
-        ));
+    .addWithJSX(
+        'default',
+        withNotes('Component for playback online-audio streams')(() => <AudioManager src={text('audio src', 'http://ice2.somafm.com/folkfwd-128-mp3')} />),
+    );
