@@ -16,67 +16,63 @@ const A = styled.a`
 
 
 class AudioManager extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      stream: null,
+      playing: false,
+      icon: playIcon,
+    };
+  }
 
-    constructor(props){
-        super(props);
-        this.state = {
-            stream: null,
-            playing: false,
-            icon: playIcon
-        };
-    }
+  componentDidMount() {
+    this.playStream();
+  }
 
-    componentDidMount(){
-        this.playStream();
-    }
+  componentWillUnmount() {
+    this.pauseStream();
+  }
 
-    componentWillUnmount(){
-        this.pauseStream();
-    }
+  playStream() {
+    const stream = new Audio(this.props.src);
+    stream.load();
+    stream.volume = 1;
+    stream.play();
 
-    playStream(){
-        let stream = new Audio(this.props.src);
-        stream.load();
-        stream.volume = 1;
-        stream.play();
+    this.setState({
+      stream,
+      playing: true,
+      icon: pauseIcon,
+    });
+  }
 
-        this.setState({
-            stream,
-            playing: true,
-            icon: pauseIcon,
-        });
-    }
+  pauseStream() {
+    this.state.stream.pause();
+    this.state.stream.src = '';
 
-    pauseStream(){
-        this.state.stream.pause();
-        this.state.stream.src = "";
-
-        this.setState ({
-            stream: null,
-            playing: false,
-            icon: playIcon,
-        });
-    }
+    this.setState({
+      stream: null,
+      playing: false,
+      icon: playIcon,
+    });
+  }
 
 
-    toggleStream() {
-        this.state.playing
-            ? this.pauseStream()
-            : this.playStream()
-    }
+  toggleStream() {
+    this.state.playing
+      ? this.pauseStream()
+      : this.playStream();
+  }
 
-    render(){
-      return (
-          <A
-              className={this.state.icon}
-              onClick={this.toggleStream.bind(this, null)}
-          ></A>
-      );
-    }
-};
+  render() {
+    return (
+      <A className={this.state.icon} onClick={this.toggleStream.bind(this, null)} />
+    );
+  }
+}
 
 AudioManager.propTypes = {
-    src: PropTypes.string
+  src: PropTypes.string,
 };
 
 
