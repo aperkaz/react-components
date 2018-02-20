@@ -7,7 +7,4 @@ module.exports = {
         "jest": true,
         "es6": true
     },
-    "ecmaFeatures": {
-        "jsx": true
-    },
 };
