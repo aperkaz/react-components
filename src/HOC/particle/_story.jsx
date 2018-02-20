@@ -10,9 +10,10 @@ import particleAnimation from './default';
 
 const Element = () => (
   <div style={{
-        height: '300px',
-        width: '300px',
+        height: '100%',
+        width: '100%',
         backgroundColor: '#6699ff',
+        position: 'absolute',
     }}
   />
 );
@@ -247,6 +248,8 @@ storiesOf('Animations/Particles', module)
   .addDecorator(host({
     title: 'Particle animation',
     align: 'center middle',
+    width: '100%',
+    height: '100%',
   }))
   .addWithJSX(
     'config1',
