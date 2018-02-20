@@ -1,6 +1,13 @@
 module.exports = {
-    extends: 'airbnb',
-    rules: {
-        indent: [2, 4],
+    "extends": "airbnb",
+    "env": {
+        "browser": true,
+        "node": true,
+        "jasmine": true,
+        "jest": true,
+        "es6": true
+    },
+    "ecmaFeatures": {
+        "jsx": true
     },
 };
