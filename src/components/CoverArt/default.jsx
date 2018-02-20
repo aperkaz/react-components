@@ -31,21 +31,21 @@ const Img = styled.img`
 
 
 const CoverArt = ({ src, height, width }) => (
-    <Holder height={height} width={width} >
-        <Img src={src} />
-    </Holder>
+  <Holder height={height} width={width} >
+    <Img src={src} />
+  </Holder>
 );
 
 CoverArt.propTypes = {
-    src: PropTypes.string,
-    height: PropTypes.string,
-    width: PropTypes.string,
+  src: PropTypes.string,
+  height: PropTypes.string,
+  width: PropTypes.string,
 };
 
 CoverArt.defaultProps = {
-    src: '',
-    height: '200px',
-    width: '200px',
+  src: '',
+  height: '200px',
+  width: '200px',
 };
 
 export default CoverArt;
