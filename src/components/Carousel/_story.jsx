@@ -21,5 +21,8 @@ setAddon(JSXAddon);
 storiesOf('Components/Carousel', module)
   .addWithJSX(
     'default',
-    withNotes('Carousel component, build with https://github.com/akiran/react-slick')(() => <Carousel options={options} />),
+    withNotes('Carousel component, build with https://github.com/leandrowd/react-responsive-carousel')(() =>
+      (<div style={{ width: '60%', margin: ' 0 auto' }} >
+        <Carousel options={options} />
+       </div>)),
   );
