@@ -18,6 +18,7 @@
     "react-particles-js": "^2.1.0",
     "react-render-html": "^0.6.0",
     "react-scripts": "1.0.17",
+    "react-slick": "^0.18.1",
     "storybook-addon-jsx": "^5.1.0",
     "storybook-host": "^4.1.5",
     "storybook-readme": "^3.1.1",
