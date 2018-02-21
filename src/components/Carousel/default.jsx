@@ -8,19 +8,19 @@ const MyCarousel = ({ options }) => (
     {...options}
   >
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+      <img src="https://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
+      <img src="https://lorempixel.com/output/cats-q-c-640-480-3.jpg" />
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
+      <img src="https://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
+      <img src="https://lorempixel.com/output/cats-q-c-640-480-5.jpg" />
     </div>
     <div>
-      <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+      <img src="https://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
     </div>
   </Carousel>
 );
