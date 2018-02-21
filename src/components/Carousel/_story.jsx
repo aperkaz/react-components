@@ -19,12 +19,6 @@ const options = {
 setAddon(JSXAddon);
 
 storiesOf('Components/Carousel', module)
-  .addDecorator(host({
-    title: 'Particle animation',
-    align: 'center middle',
-    width: '100%',
-    height: '100%',
-  }))
   .addWithJSX(
     'default',
     withNotes('Carousel component, build with https://github.com/akiran/react-slick')(() => <Carousel options={options} />),
