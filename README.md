@@ -1,5 +1,5 @@
 # react-components
-📖 Showcase of React components and web animations. 
+📖 Showcase of React components, patterns and animations. 
 
 ## Goal
 Enable the quick exploration and navigation over an ever growing collection.
